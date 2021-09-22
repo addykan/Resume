@@ -41,7 +41,7 @@
 \newcommand{\program}[4]{
     \heading{#1}
     \\\textit{#2}
-    \\#3, #4
+    \\#3 #4
     \\\subsectionbreak
 }
 
