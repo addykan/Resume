@@ -62,7 +62,7 @@
 
 % Component: Heading
 \newcommand{\heading}[1]{%
-    \textbf{#1}%
+    {\large \textbf{#1}}%
 }
 
 % Component: Label
