@@ -8,7 +8,7 @@
 
 % Setup: Spacing
 \newcommand{\hmargin}{0.75cm}
-\newcommand{\vmargin}{0.75cm}
+\newcommand{\vmargin}{0.5cm}
 \renewcommand{\baselinestretch}{1.12}
 \setlength{\parindent}{0in}
 
