@@ -7,7 +7,7 @@
 \ProcessOptions\relax
 
 % Component: Spacing
-\newcommand{\subsectionbreak}{\vspace{0.2cm}}
+\newcommand{\subsectionbreak}{\vspace{0.25cm}}
 \newcommand{\paragraphbreak}{\vspace{0.10cm}}
 
 % Component: Left Minipage

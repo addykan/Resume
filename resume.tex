@@ -16,76 +16,99 @@
 
 \header{Adhvik Kanagala}
 {\faIcon[regular]{envelope} \underline{\href{mailto: adhvik.kanagala@gmail.com}{adhvik.kanagala@gmail.com}}}
-{\faIcon{phone-alt} (848) 256-9450}
+{\faIcon{phone-alt} (848) 256–9450}
 {\faIcon{github} \underline{\href{https://github.com/addykan}{addykan}}}
 {\faIcon{linkedin} \underline{\href{https://www.linkedin.com/in/adhvik-kanagala/}{Adhvik Kanagala}}}
 \lhs{
     \sectionheader{Education}
-    \program{School of Computer Science, Carnegie Mellon University}{Bachelor of Science}{Computer Science Concentration in Computer Systems, }{May 2024} \\
-    % \, \\
-    % \gpa{GPA: 3.8} \\ 
-    \, \\ 
+    \program{School of Computer Science, Carnegie Mellon University}{Bachelor of Science}{Computer Science Concentration in Computer Systems, }{May 2024} 
+
+    \subsectionbreak{}
+
     \courses{
-    Database Systems}
+    Parallel Computer Architecture and Programming}
+    {Database Systems}
     {Distributed Systems}
     {Algorithm Design and Analysis}
     {Computer Security}
-    {Computer Systems}
+    {Machine Learning}
 
-    \, \\ \\ \\
+    \subsectionbreak{}
 
     \sectionheader{Activities}
     \minipassport{\underline{\href{https://scottylabs.org/}{ScottyLabs}}}{}{Tech Project Lead, ScottyMaps}
-    \minipassport{Nozari Lab}{}{Undergraduate Research Assistant}
-    
-    \, \\ \\ \\
+    % \minipassport{Nozari Lab}{}{Undergraduate Research Assistant}
+
+
+    \subsectionbreak{}
 
     \sectionheader{Skills}
-    \skills{Languages (ordered by experience)}{Python}{Go}{C++}{Standard ML}{C}{Erlang}{Hack/PHP}{Thrift}{x86-64}{Javascript}{OCaml}{Typescript}{Dart}{x86-64}{R}{MATLAB}
-    \skills{Technologies}{Git}{Mercurial}{Thrift}{MongoDB}{React}{Flutter}
+    \skills{Languages (ordered by experience)}{Python}{Go}{C++}{Standard ML}{C}{Erlang}{Hack/PHP}{Thrift}{x86–64}{Typescript}{OCaml}{Dart}{R}{MATLAB}
+    \skills{Technologies}{Git}{Mercurial}{Thrift}{Flask}{SQL}{React}{MongoDB}{Flutter}
     \skills{Other Skills}{Teaching}{Review}
 }
 \hfill
 \rhs{
     \sectionheader{Work Experience}
-    \work{Meta}{SWE Intern, WhatsApp Business Infra}{May 2022 – August 2022}
+    \work{Duolingo}{Software Engineer Intern, Data Refinery}{May 2023 – August 2023}
+    % {Built an internal tool to monitor and visualize the status of production datasets, while also alerting relevant teams about outages}
+    {Built an automated monitoring tool to help data platform area track production datasets}
+    {Significantly reduced eng time spent monitoring and fixing dataset outages}
+    {Built another tool to visualize dependency graph for datasets used by data science team}
+    {Improved sustainability of data science area's growth objectives for 2023}
+    % TODO: Add another bullet point about impact of table lineage tool
+    \subsectionbreak{}
+    \work{Meta}{Software Engineer Intern, WhatsApp Business Infra}{May 2022 – August 2022}
     {Migrated a critical billing service in WhatsApp Business backend to serverless infrastructure}
-    {Reduced development timelines on this service from weeks to hours (already demonstrated)}
+    {Reduced development timelines on this service from weeks to hours}
     {Eliminated dependency on chat infra team for deployment/maintenance of business services}
     {Developed onboarding documentation and starter tasks for new engineers}
     % {Slim down existing C++ backend logic}
-    \, \\ \\ \\ % Not really sure how many of these I need tbh
+    \subsectionbreak{}
     \work{\underline{\href{https://www.cs.cmu.edu/~112/}
     {Intro to Programming}}}{TA, Head of Review \& TA Management}{Feb 2021 – Present}
     {Manage a team of 40+ TAs, run quality assurance, design training sessions, and provide feedback on TA performance}
     {Collaborate with professors to lead the review team, which provides actionable feedback on class notes, assessments, assignments, and all other student-facing material before release}
     {Develop practice materials, teach weekly group sessions of 5–100 students, tutor struggling students, grade assignments and assessments, hold office hours for 2+ hours per week}
     {Mentor 10 students each semester through a 1000–1500 line term project showcasing algorithmic complexity and visual design}
-    \, \\ \\ \\
-    \work{\underline{\href{https://www.nozarilab.com/}{Nozari Lab}}, Carnegie Mellon University}{Research Assistant}{Feb 2021 - July 2021}
-    {Worked with the \underline{\href{https://www.jspsych.org/}{jsPsych}} library to build and deploy a web-based linguistics experiment to investigate language production pipelines through the task of typing words}
-    {Built a processing tool in Python to categorize linguistic errors in typed input}
-    \, \\ \\ \\
+    \subsectionbreak{}
     \sectionheader{Projects}
-    \work{\underline{\href{https://github.com/anudaweerasinghe/nsc-web}{SL Sports}}}{Developer}{Summer 2021}
-    {Used the \underline{\href{https://www.mongodb.com/mern-stack}{MERN}} stack to digitize player management for Sri Lankan national athletics}
-    {Built a desktop website in React for sports associations and national sports council to track and approve activities, payments, and competitive standings}
-    {Deployed a mobile app with Flutter for players and coaches to track activities and payments}
-    \, \\
-    \work{\underline{\href{https://github.com/ScottyLabs/tartanhacksdashboard/tree/akanagal}{Tartanhacks Dashboard}}}{Developer}{2020-2021}
-    {Developed a hackathon-focused dashboard app for iOS, Android, and the web}
-    {Implemented leaderboards, check-in system, project submission, team search, event calendar, and an account system}
-    {Deployed a backend API with MongoDB and Express.js to manage hacker and event data}
-    {Used for TartanHacks 2021, an international hackathon at CMU with 350+ participants}
-    \, \\
-    \work{\underline{\href{https://github.com/addykan/15-112-Term-Project}{Primrunner}}}{Sole Developer}{Fall 2020}
-    {Implemented a rogue-like mazerunner game by utilizing Prim's algorithm to generate successively larger mazes filled with weapons, powerups, and enemy AI}
-    {Built in Python, using Tkinter and a graphics package built at Carnegie Mellon}
+    \work{Raft Consensus Algorithm}{15-440 Distributed Systems}{Fall 2022}
+    {Referenced the original research paper to simulate the Raft consensus algorithm in Go}
+    {Designed a DFA-style peer model that implements leader election and log replication}
+    % {Implements leader election, distributed log replication, }
+    \subsectionbreak{}
+    \work{Distributed Bitcoin Miner}{15-440 Distributed Systems}{Fall 2022}
+    {Implemented the Live Sequence Protocol, a custom network protocol that extends UDP}
+    {LSP uses a server/client model to support automatic packet resending, exponential backoff, ordered message delivery}
+    {Used LSP to build a mock distributed bitcoin miner with round-robin task scheduling}
+    \subsectionbreak{}
+    \work{Bustub}{15-445 Database Systems}{Spring 2023}
+    {Built core features of a partially complete database management system}
+    {Implemented a buffer pool manager, B+ tree index, SQL query executor and optimizer, and transaction-based concurrency control system with multiple isolation levels}
+    \subsectionbreak{}
+    \work{CMUD}{15-440 Distributed Systems}{Fall 2022}
+    {Applied the actor model to develop an online text-based shell game using Go's RPC package}
+    {Used decentralized backend servers and designed a scalable syncing strategy to replicate game state across servers, while maintaining high availability and performance}
+    % \work{\underline{\href{https://github.com/anudaweerasinghe/nsc-web}{SL Sports}}}{Developer}{Summer 2021}
+    % {Used the \underline{\href{https://www.mongodb.com/mern-stack}{MERN}} stack to digitize player management for Sri Lankan national athletics}
+    % {Built a desktop website in React for sports associations and national sports council to track and approve activities, payments, and competitive standings}
+    % {Deployed a mobile app with Flutter for players and coaches to track activities and payments}
+    % \subsectionbreak{}
+    % \work{\underline{\href{https://github.com/ScottyLabs/tartanhacksdashboard/tree/akanagal}{Tartanhacks Dashboard}}}{Developer}{2020-2021}
+    % {Developed a hackathon-focused dashboard app for iOS, Android, and the web}
+    % {Implemented leaderboards, check-in system, project submission, team search, event calendar, and an account system}
+    % {Deployed a backend API with MongoDB and Express.js to manage hacker and event data}
+    % {Used for TartanHacks 2021, an international hackathon at CMU with 350+ participants}
+    % \subsectionbreak{}
+    % \work{\underline{\href{https://github.com/addykan/15-112-Term-Project}{Primrunner}}}{Sole Developer}{Fall 2020}
+    % {Implemented a rogue-like mazerunner game by utilizing Prim's algorithm to generate successively larger mazes filled with weapons, powerups, and enemy AI}
+    % {Built in Python, using Tkinter and a graphics package built at Carnegie Mellon}
 
-    \, \\ \\ \\
+    
 
-    \sectionheader{Research and Publications}
-    \publication{\underline{\href{https://www.ncbi.nlm.nih.gov/nuccore/1752318458}{Protein Analysis}} of selected genes of \emph{Landoltia punctata}}{Author}{Multiple sequences published on NCBI's GenBank (2020)}
+    % \sectionheader{Research and Publications}
+    % \publication{\underline{\href{https://www.ncbi.nlm.nih.gov/nuccore/1752318458}{Protein Analysis}} of selected genes of \emph{Landoltia punctata}}{Author}{Multiple sequences published on NCBI's GenBank (2020)}
 }
 
 \end{document}
