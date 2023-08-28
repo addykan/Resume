@@ -38,11 +38,13 @@
 }
 
 % Component: Program
-\newcommand{\program}[4]{
+\newcommand{\program}[7]{
     \heading{#1}
     \\\textit{#2}
     \\#3 #4
     \\\subsectionbreak
+    \textit{#5}
+    \\#6, #7
 }
 
 % Component: GPA/QPA
