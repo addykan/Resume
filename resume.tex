@@ -1,125 +1,251 @@
-% !TEX program = xelatex
+%-------------------------
+% Resume in Latex
+% Author : Adhvik Kanagala
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
 
-\documentclass[]{paws}
+\documentclass[letterpaper,11pt]{article}
 
-% Packages
-\usepackage{hyperref}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
-% Link setup
-\hypersetup{
-    colorlinks=true,
-    urlcolor=cyan,
-    pdftitle={Adhvik Kanagala Resume}
-    }
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
-\header{Adhvik Kanagala}
-{\faIcon[regular]{envelope} \underline{\href{mailto: adhvik.kanagala@gmail.com}{adhvik.kanagala@gmail.com}}}
-{\faIcon{phone-alt} (848) 256–9450}
-{\faIcon{github} \underline{\href{https://github.com/addykan}{addykan}}}
-{\faIcon{linkedin} \underline{\href{https://www.linkedin.com/in/adhvik-kanagala/}{Adhvik Kanagala}}}
-\lhs{
-    \sectionheader{Education}
-    \program{School of Computer Science, Carnegie Mellon University, Class of 2024}{Bachelor of Science}{Computer Science Concentration in Computer Systems}{}
-    % \program{School of Computer Science, Carnegie Mellon University, Class of 2025}{Master of Science}{Computer Science}
-    \
-    \subsectionbreak{}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-    \courses{
-    Distributed Systems}
-    {Database Systems}
-    {Parallel Computer Architecture and Programming}
-    {Algorithm Design and Analysis}
-    {Computer Security}
-    {Machine Learning}
-    {Writing for the Professions}
-
-    \subsectionbreak{}
-
-    \sectionheader{TA}
-    \minipassport{Distributed Systems}{Taught in Go}{}
-    \minipassport{Intro to Programming}{Taught in Python}{}
-
-    \sectionheader{Activities}
-    \minipassport{\underline{\href{https://scottylabs.org/}{ScottyLabs}}}{}{Tech Project Lead, ScottyMaps}
-    % \minipassport{Nozari Lab}{}{Undergraduate Research Assistant}
+\begin{center}
+    \textbf{\Huge \scshape Adhvik Kanagala} \\ \vspace{1pt}
+    \small 848-256-9450 $|$ \href{mailto:adhvik.kanagala@gmail.com}{\underline{adhvik.kanagala@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/adhvik-kanagala}{\underline{linkedin.com/in/adhvik-kanagala}} $|$
+    \href{https://github.com/addykan}{\underline{github.com/addykan}}
+\end{center}
 
 
-    \subsectionbreak{}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  % \resumeSubheading
+  %   {Carnegie Mellon University}{Pittsburgh, PA}
+  %   {Master of Science, Computer Science, Researching Distributed Systems}{Aug. 2024 -- May 2025}
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Bachelor of Science, Computer Science, Concentration in Computer Systems}{Aug. 2020 -- May 2024}
+  \resumeSubHeadingListEnd
 
-    \sectionheader{Skills}
-    \skills{Languages (ordered by experience)}{Python}{Go}{C++}{Standard ML}{C}{Erlang}{Hack/PHP}{Thrift}{x86–64}{Typescript}{OCaml}{Dart}{R}{MATLAB}
-    \skills{Technologies}{Git}{Mercurial}{Thrift}{Flask}{SQL}{BigQuery}{Unix}{React}{MongoDB}{Flutter}
-    \skills{Other Skills}{Teaching}{Review}
-}
-\hfill
-\rhs{
-    \sectionheader{Work Experience}
-    \work{Duolingo}{Software Engineer Intern, Data Refinery}{May 2023 – August 2023}
-    % {Built an internal tool to monitor and visualize the status of production datasets, while also alerting relevant teams about outages}
-    {Built an automated monitoring tool to help data platform area track production datasets}
-    % {Significantly reduced eng time spent monitoring and fixing dataset outages}
-    {Eliminated active monitoring of dataset freshness by engineers}
-    {Built tool to visualize dependency graph for datasets used by data science team}
-    {Engineered new way to debug low-quality datasets by data science team}
-    {Improved sustainability of data science area's 2023 growth objectives by upgrading tooling}
-    % TODO: Add another bullet point about impact of table lineage tool
-    \subsectionbreak{}
-    \work{Meta}{Software Engineer Intern, WhatsApp Business Infra}{May 2022 – August 2022}
-    {Migrated a critical billing service in WhatsApp Business backend to serverless infrastructure, reducing future development timelines on this service from weeks to hours}
-    {Eliminated dependency on chat infra team for deployment/maintenance of business services}
-    {Developed onboarding documentation and starter tasks for new engineers}
-    % {Slim down existing C++ backend logic}
-    \subsectionbreak{}
-    \work{\underline{\href{http://www.cs.cmu.edu/~112-s23/}
-    {Intro to Programming}}}{Head of Review \& TA Management}{Feb 2021 – May 2023}
-    {Manage a team of 40+ TAs, run quality assurance, design training sessions, and provide feedback on TA performance}
-    {Collaborate with professors to lead the review team, which provides actionable feedback on class notes, assessments, assignments, and all other student-facing material before release}
-    {Develop practice materials, teach weekly group sessions of 5–100 students, tutor struggling students, grade assignments and assessments, hold office hours for 2+ hours per week}
-    {Mentor 10 students each semester through a 1000–1500 line term project showcasing algorithmic complexity and visual design}
-    \subsectionbreak{}
-    \sectionheader{Projects}
-    \work{\underline{\href{https://github.com/anudaweerasinghe/nsc-web}{SL Sports}}}{Developer}{Summer 2021}
-    {Used the \underline{\href{https://www.mongodb.com/mern-stack}{MERN}} stack to digitize player management for Sri Lankan national athletics}
-    {Built a desktop website in React for sports associations and national sports council to track and approve activities, payments, and competitive standings}
-    {Deployed a mobile app with Flutter for players and coaches to track activities and payments}
-    \work{Raft Consensus Algorithm}{15-440 Distributed Systems}{Fall 2022}
-    {Referenced the original research paper to simulate the Raft consensus algorithm in Go}
-    {Designed a DFA-style peer model that implements leader election and log replication}
-    % {Implements leader election, distributed log replication, }
-    \subsectionbreak{}
-    \work{Distributed Bitcoin Miner}{15-440 Distributed Systems}{Fall 2022}
-    {Implemented the Live Sequence Protocol, a bespoke network protocol that extends UDP}
-    {LSP uses a server/client model to support automatic packet resending, exponential backoff, ordered message delivery}
-    {Used LSP to build a mock distributed bitcoin miner with round-robin task scheduling}
-    \subsectionbreak{}
-    \work{Bustub DBMS}{15-445 Database Systems}{Spring 2023}
-    {Built core features of a partially complete database management system}
-    {Implemented a buffer pool manager, B+ tree index, SQL query executor and optimizer, and transaction-based concurrency control system with multiple isolation levels}
-    \subsectionbreak{}
-    % \work{Multi-User Dungeon (CMUD)}{15-440 Distributed Systems}{Fall 2022}
-    % {Applied the actor model to develop an online text-based shell game using Go's RPC package}
-    % {Designed and implemented a scalable syncing strategy to replicate game state across distributed servers, while maintaining high availability and performance}
-    % \work{\underline{\href{https://github.com/anudaweerasinghe/nsc-web}{SL Sports}}}{Developer}{Summer 2021}
-    % {Used the \underline{\href{https://www.mongodb.com/mern-stack}{MERN}} stack to digitize player management for Sri Lankan national athletics}
-    % {Built a desktop website in React for sports associations and national sports council to track and approve activities, payments, and competitive standings}
-    % {Deployed a mobile app with Flutter for players and coaches to track activities and payments}
-    % \subsectionbreak{}
-    % \work{\underline{\href{https://github.com/ScottyLabs/tartanhacksdashboard/tree/akanagal}{Tartanhacks Dashboard}}}{Developer}{2020-2021}
-    % {Developed a hackathon-focused dashboard app for iOS, Android, and the web}
-    % {Implemented leaderboards, check-in system, project submission, team search, event calendar, and an account system}
-    % {Deployed a backend API with MongoDB and Express.js to manage hacker and event data}
-    % {Used for TartanHacks 2021, an international hackathon at CMU with 350+ participants}
-    % \subsectionbreak{}
-    % \work{\underline{\href{https://github.com/addykan/15-112-Term-Project}{Primrunner}}}{Sole Developer}{Fall 2020}
-    % {Implemented a rogue-like mazerunner game by utilizing Prim's algorithm to generate successively larger mazes filled with weapons, powerups, and enemy AI}
-    % {Built in Python, using Tkinter and a graphics package built at Carnegie Mellon}
 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
     
+    \resumeSubheading
+      {Pinecone}{June 2024-Present}
+      {Software Engineer, Vector Database}{New York City}
+      \resumeItemListStart
+        % \resumeItem{Led development of database-wide suport for customer-managed encryption keys, whereby user data is encrypted at rest by a customer-controlled key.}
+        \resumeItem{Sole engineer for customer-managed encryption keys, supporting at-rest encryption of all customer data}
+        \resumeItem{Unlocked access to over \$500k ARR (and counting) in new paying customers with strict security requirements}
+        \resumeItem{Reduced compute costs for global control plane, saving over \$50k per month}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Vorticity, Inc}{Jan 2024 -- May 2024}
+      {Software Engineer \#8}{Redwood City, CA}
+      \resumeItemListStart
+        \resumeItem{Designed and built a distributed job scheduling library for self-hosted datacenter}
+        \resumeItem{Eliminated explicit scheduling of compute jobs, transforming the datacenter into a serverless interface for engineers}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Duolingo}{May 2023 -- August 2023}
+      {Software Engineer Intern, Data Refinery}{Pittsburgh, PA}
+      \resumeItemListStart
+      \resumeItem{Built an automated monitoring tool to help data platform area track production datasets}
+      \resumeItem{Eliminated active monitoring of dataset freshness by engineers}
+      \resumeItem{Built tool to visualize dependency graph for datasets used by data science team}
+      \resumeItem{Engineered new way to debug low-quality datasets by data science team}
+      \resumeItem{Improved sustainability of data science area's 2023 growth objectives by upgrading tooling}
+      \resumeItemListEnd
+    \resumeSubheading
+        {Meta}{May 2022 -- August 2022}
+        {Software Engineer Intern, WhatsApp Business Infra}{Menlo Park, CA}
+        \resumeItemListStart
+          \resumeItem{Migrated a critical billing service in WhatsApp Business backend to serverless infrastructure, reducing future development timelines on this service from weeks to hours}
+          \resumeItem{Eliminated dependency on chat infra team for deployment/maintenance of business services}
+          \resumeItem{Developed onboarding documentation and starter tasks for new engineers}
+        \resumeItemListEnd
+    % \resumeSubheading
+    %   {School of Computer Science, Carnegie Mellon University}{Feb 2021 -- December 2023}
+    %   {Teaching Assistant}{Pittsburgh, PA}
+    %     \resumeItemListStart
+    %       \resumeItem{Distributed Systems 1 semester, Intro to Programming 6 semesters}
+    %       \resumeItem{Updated and released two of the four programming projects for Distributed Systems, built in Go}
+    %       \resumeItem{Taught 2 recitations per week, held office hours, and graded assignments}
+    %     \resumeItemListEnd
 
-    % \sectionheader{Research and Publications}
-    % \publication{\underline{\href{https://www.ncbi.nlm.nih.gov/nuccore/1752318458}{Protein Analysis}} of selected genes of \emph{Landoltia punctata}}{Author}{Multiple sequences published on NCBI's GenBank (2020)}
-}
+      % \resumeItemListStart
+      %   \resumeItem{Migrated a critical billing service in WhatsApp Business backend to serverless infrastructure, reducing future development timelines on this service from weeks to hours}
+      %   \resumeItem{Eliminated dependency on chat infra team for deployment/maintenance of business services}
+      %   \resumeItem{Developed onboarding documentation and starter tasks for new engineers}
+      % \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
 
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{c0c} $|$ \emph{15-411 Compiler Design}}{Spring 2024}
+          \resumeItemListStart
+            \resumeItem{Building a compiler for the C0 language, a Turing-complete subset of C, targeting x86-64}
+            \resumeItem{Implementing all phases of compilation, from lexing and parsing to explicit x86-64 instruction generation}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Raft Consensus Algorithm} $|$ \emph{15-440 Distributed Systems}}{Fall 2022}
+          \resumeItemListStart
+          \resumeItem{Referenced the original research paper to simulate the Raft consensus algorithm in Go}
+          \resumeItem{Designed a DFA-style peer model that implements leader election and log replication}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Distributed Bitcoin Miner} $|$ \emph{15-440 Distributed Systems}}{Fall 2022}
+          \resumeItemListStart
+          \resumeItem{Implemented the Live Sequence Protocol, a bespoke network protocol that extends UDP}
+          \resumeItem{LSP uses a server/client model to support automatic packet resending, exponential backoff, ordered message delivery}
+          \resumeItem{Used LSP to build a mock distributed bitcoin miner with round-robin task scheduling}
+          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{SLSports} $|$ \emph{Developer}}{Summer 2021}
+      %     \resumeItemListStart
+      %       \resumeItem{Used the \underline{\href{https://www.mongodb.com/mern-stack}{MERN}} stack to digitize player management for Sri Lankan national athletics}
+      %       \resumeItem{Built a desktop website in React for sports associations and national sports council to track and approve activities, payments, and competitive standings}
+      %       \resumeItem{Deployed a mobile app with Flutter for players and coaches to track activities and payments}
+      %     \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Bustub DBMS} $|$ \emph{15-445 Database Systems}}{Spring 2023}
+          \resumeItemListStart
+            \resumeItem{Implemented a buffer pool manager, B+ tree index, SQL query executor and optimizer, and transaction-based concurrency control with multiple isolation levels}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Rust, Python, Go, C++, Standard ML, C, OCaml, Cuda, Erlang, Hack/PHP, Thrift, x86–64, Typescript} \\
+     \textbf{Developer Tools}{: Kubernetes, Docker, Thrift, Flask, SQL, Unix, React, MongoDB, Flutter} \\
+     \textbf{Coursework}{: Compiler Design, Distributed Systems, Database Systems, Parallel Computer Architecture, Algorithm Design and Analysis, Computer Security, Machine Learning, Writing for the Professions}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
 \end{document}
