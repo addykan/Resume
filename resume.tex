@@ -134,16 +134,24 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-    
+
     \resumeSubheading
-      {Pinecone}{June 2024-Present}
+      {Cursor}{December 2025 -- March 2026}
+      {Software Engineer, Async Infra}{New York City}
+      \resumeItemListStart
+        \resumeItem{Contributed to scalability efforts for sandboxing runtime, used for both RL environments and cloud agents} 
+        \resumeItem{Enabled multithreaded VM hydration, node workload rebalancing, and configurable VM resources per user}
+        \resumeItem{Implemented initial production version of self-hosted cloud agents, unblocking Cursor's cloud offerings for enterprise customers and allowing Cursor agent to operate in any user-provided environment}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Pinecone}{June 2024 -- December 2025}
       {Software Engineer, Database}{New York City}
       \resumeItemListStart
         % \resumeItem{Led development of database-wide suport for customer-managed encryption keys, whereby user data is encrypted at rest by a customer-controlled key.}
         % \resumeItem{Unlocked access to over \$500k ARR (and counting) in new paying customers with strict security requirements}
         \resumeItem{Shipped a job scheduler supporting automated index compaction and resharding, enabling an increase in write traffic from O(1k) requests per second to O(100k) requests per second}
         \resumeItem{Built freshness layer for querying over freshly written data, reducing time to read consistency from 10s to 500ms}
-        \resumeItem{Wrote a randomized load balancing algorithm for distributing O(10M) variably-sized files over multinenant pool of read nodes – enabled per-customer scaling of serverless compute and a 25\% reduction in read pool size}
+        \resumeItem{Wrote a randomized load balancing algorithm for distributing O(10M) variably-sized files over multitenant pool of read nodes – enabled per-customer scaling of serverless compute and a 25\% reduction in read pool size}
         \resumeItem{Shipped enterprise-readiness features such as database-wide customer-managed encryption keys (CMEK)}
       \resumeItemListEnd
     \resumeSubheading
@@ -157,16 +165,16 @@
       {Duolingo}{May 2023 -- August 2023}
       {Software Engineer Intern, Data Refinery}{Pittsburgh, PA}
       \resumeItemListStart
-      \resumeItem{Built an observability service to monitor ETL jobs, eliminating active monitoring work by engineering team}
-      \resumeItem{Built a web UI to visualize dependency graph of datasets used by data science org}
-      \resumeItem{Improved sustainability of data science area's 2023 growth objectives by upgrading tooling}
+      \resumeItem{Upgraded ETL job observability, eliminating active monitoring work by engineering team}
+      \resumeItem{Built a dependency graph of datasets used by data science org to visualize data health}
+      % \resumeItem{Improved sustainability of data science area's 2023 growth objectives by upgrading tooling}
       \resumeItemListEnd
     \resumeSubheading
         {Meta}{May 2022 -- August 2022}
         {Software Engineer Intern, WhatsApp Business Infra}{Menlo Park, CA}
         \resumeItemListStart
-          \resumeItem{Migrated a critical billing service in WhatsApp Business backend to serverless infrastructure, reducing development timelines from weeks to hours}
-          \resumeItem{Eliminated dependency on adjacent chat infra team for deployment/maintenance of business services}
+          \resumeItem{Migrated a critical billing service in WhatsApp Business backend to serverless infrastructure, reducing development timelines from weeks to hours. Eliminated dependency on adjacent team for deployment of business services}
+          % \resumeItem{Eliminated dependency on adjacent chat infra team for deployment/maintenance of business services}
           \resumeItem{Migrated configuration library in billing service to a new source of truth, enabling quick updates and codification}
           % \resumeItem{Developed onboarding documentation and starter tasks for new engineers}
         \resumeItemListEnd
@@ -204,23 +212,23 @@
       \resumeProjectHeading
           {\textbf{c0c} $|$ \emph{15-411 Compiler Design}}{Spring 2024}
           \resumeItemListStart
-            \resumeItem{Built a compiler for the C0 language, a Turing-complete subset of C, targeting x86-64}
-            \resumeItem{Implemented lexing, parsing, IR, register allocation, and x86 instruction generation}
+            \resumeItem{Built a compiler in OCaml for the C0 language, a Turing-complete subset of C, targeting x86-64}
+            \resumeItem{Implemented lexing, parsing, IR generation, register allocation, and x86 instruction generation}
             \resumeItem{Extended support for LLVM to allow ARM compilation}
           \resumeItemListEnd
           \resumeProjectHeading
           {\textbf{Raft Consensus Algorithm} $|$ \emph{15-440 Distributed Systems}}{Fall 2022}
           \resumeItemListStart
-          \resumeItem{Implemented a simulator for the Raft consensus algorithm in Go}
+          \resumeItem{Simulated the Raft consensus algorithm in Go}
           \resumeItem{Designed a DFA-style peer model that implements leader election and log replication}
           \resumeItemListEnd
-          \resumeProjectHeading
-          {\textbf{Distributed Bitcoin Miner} $|$ \emph{15-440 Distributed Systems}}{Fall 2022}
-          \resumeItemListStart
-          \resumeItem{Implemented the Live Sequence Protocol, a bespoke network protocol that extends UDP}
-          \resumeItem{Built a server/client model to support automatic packet retries, exponential backoff, and ordered message delivery}
-          \resumeItem{Used LSP to build a mock distributed bitcoin miner with round-robin job scheduling}
-          \resumeItemListEnd
+          % \resumeProjectHeading
+          % {\textbf{Distributed Bitcoin Miner} $|$ \emph{15-440 Distributed Systems}}{Fall 2022}
+          % \resumeItemListStart
+          % \resumeItem{Implemented the Live Sequence Protocol, a bespoke network protocol that extends UDP}
+          % \resumeItem{Built a server/client model to support automatic packet retries, exponential backoff, and ordered message delivery}
+          % \resumeItem{Used LSP to build a mock distributed bitcoin miner with round-robin job scheduling}
+          % \resumeItemListEnd
       % \resumeProjectHeading
       %     {\textbf{SLSports} $|$ \emph{Developer}}{Summer 2021}
       %     \resumeItemListStart
@@ -242,8 +250,8 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Rust, Python, Go, C++, C, OCaml, Cuda, Erlang, Hack/PHP, Thrift, x86–64, Standard ML, Typescript} \\
-     \textbf{Developer Tools}{: Kubernetes, Docker, Thrift, Flask, SQL, Unix, React, MongoDB, Flutter} \\
+     \textbf{Languages}{: Rust, Python, Go, C++, C, OCaml, CUDA, Erlang, Hack/PHP, x86–64, Standard ML, Typescript} \\
+     \textbf{Developer Tools}{: Kubernetes, Docker, Thrift, Flask, SQL, Unix, React} \\
      \textbf{Coursework}{: Compiler Design, Distributed Systems, Database Systems, Parallel Computer Architecture, Algorithm Design and Analysis, Computer Security, Machine Learning, Writing for the Professions}
     }}
  \end{itemize}
